@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.TitleImg{
+  position: absolute;
+  width: 1080px;
+  height: 665px; 
+  z-index: 0;
+}
+
+.container1{
+    color: white;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+}
+
+
+.MDLTG{
+    position: absolute;
+    color: white;
+    left: 300px;
+    top: 320px;
+    font-size: 5rem;
+    text-shadow: 0 0 20px white;
+    font-family: fantasy;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.ghost{
+    left: 880px;
+    top: 240px;
+    position: absolute;
+    font-size: 200px;
+    color: white;
+    text-shadow: 0 0 80px rgb(14, 109, 93),
+                0 0 160px rgb(26, 160, 109),
+                0 0 240px rgb(22, 168, 66),
+                0 0 320px green;
+}
+
+.text{
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 8rem;
+    top: 500px;
+    width: 700px;
+    left: -300px;
+}
