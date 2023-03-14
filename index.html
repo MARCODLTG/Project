@@ -1,3 +1,4 @@
+<div id="luz"></div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,20 +7,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> 
     <script src="main.js"></script>
     <title>MDLTG Project</title>
 </head>
 <body>
-    <img class="TitleImg" src="https://img3.wallspic.com/crops/1/3/3/1/7/171331/171331-poquer_oscuro-poker-para_jugar_a_las_cartas-as-espadas-1366x768.jpg" alt="">
-    <div class="container container1">
-        <p class="MDLTG">M A R C O D L T G</p>
-        <i class="fa-solid fa-ghost ghost"></i>
-        
+    <img class="TitleImg" src="https://img2.wallspic.com/crops/1/5/1/1/5/151151/151151-ilustracion_de_marco_blanco_y_negro-1366x768.jpg" alt="">
+    <div id="Presentation">
+        <p id="MDLTG">M A R C O D L T G</p>
+        <div id="card"></div>
+        <i class="bi bi-suit-club-fill poker1"></i>
+        <i class="bi bi-suit-diamond-fill poker2"></i>
+        <i class="bi bi-suit-heart-fill poker3"></i>
+        <i class="bi bi-suit-spade-fill poker4"></i>
+        <div id="card1"></div>
+        <i class="bi bi-suit-club-fill poker1_1"></i>
+        <i class="bi bi-suit-diamond-fill poker2_1"></i>
+        <i class="bi bi-suit-heart-fill poker3_1"></i>
+        <i class="bi bi-suit-spade-fill poker4_1"></i>
+        <a class="autoscroll" href="#txtv"><i class="fa-solid fa-circle-chevron-down arrow"></i></a>
+        <div class="container1">
+            <a class="autoscroll" href="#about"><p id="acerca">ACERCA DE MÍ</p></a>
+            <a class="autoscroll" href="#educa"><p id="edu">EDUCACIÓN</p></a>
+            <a class="autoscroll" href="#projects"><p id="project">PROYECTOS REALIZADOS</p></a>
+            <a class="autoscroll" href="#contact"><p id="contacto">CONTACTO</p></a>
+        </div>
     </div>
-    <div>
-        <p class="text">Versión 0.0.3</p>
+    <div class="container2">
+        <div id="about">
+            <h1 class="text">ACERCA DE MÍ</h1>
+            <p id="pacerca">Mi nombre es Marco De La Torre Garzón, soy Ingeniero en Sistemas de Información e Ilustrador Gráfico Jr. Desde pequeño me ha interesado todo acerca de la tecnología, empezó en 2006 como un gusto por las cosas futuristas (robóts, carros voladores, etc.) y luego por los videojuegos, es por eso que desde que tengo memoria, ya tenía decidido la carrera que iba a seguir y el camino que tomaría en mi vida, desde entonces solo tuve mi enfoque en querer realizar proyectos relacionados con videojuegos y, posiblemente en un futuro, con mecatrónica. <br>Hace pocos años tuve interés por el anime (dibujos animados japoneses), es por eso que decidí combinar mi conocimiento de programación con uno nuevo, el cual era ilustración gráfica, esto para poder "darle vida" a mis ilustraciones e incluso crear un videojuego basado en un anime propio o viceversa.</p>
+        </div>
+        <div id="educa">
+            <h1 class="text">EDUCACIÓN</h1>
+            <p id="lst_edu">
+                <ul>
+                    <li>
+                        Ilustrador Gráfico Jr.
+                        <img id="ilus" src="https://scontent.fgye7-1.fna.fbcdn.net/v/t39.30808-6/327126735_918675779568622_113600605875183544_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=cjDzI3tiNjoAX9vEFin&_nc_oc=AQlr0tBtLibKdV-gq7bP7ROxzfT8A0V4KoR4gDXWfWP967kMPFlqy66O4Uoy3_as6MI&_nc_ht=scontent.fgye7-1.fna&oh=00_AfCVVjkJ1B2NvLPOMFhIZfe8Tlm1r4fLgfbC3Vc_sAFn_A&oe=64148A2B" alt="">
+                    </li><br><br><br><br>
+                    <li>
+                        Ingeniero en Sistemas
+                        <img id="upa" src="https://media.licdn.com/dms/image/C4D0BAQHKKB0NVmQGww/company-logo_200_200/0/1519873895904?e=2147483647&v=beta&t=baYCrNmorTiIvXbx5VcATIIUNKl4y37LSv3GI69RxWQ" alt="">
+                    </li><br><br><br><br>
+                    <li>
+                        Ingeniero en Mecatrónica
+                        <img id="espol" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/ESPOL_-_Logo_001.svg/1024px-ESPOL_-_Logo_001.svg.png" alt="">
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <div id="projects">
+            <h1 id="text_proj">PROYECTOS REALIZADOS</h1>
+            <p id="pproyectos"></p>
+        </div>
+        <div id="contact">
+            <h1 class="text">CONTACTO</h1>
+            <p id="pcontacto"></p>
+        </div>
+        <div>
+            <p id="txtv">Versión 0.0.4</p>
+        </div>
     </div>
-    
-    
 </body>
 </html>

@@ -3,58 +3,400 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: black;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-image: url(https://img3.wallspic.com/crops/1/3/3/1/7/171331/171331-poquer_oscuro-poker-para_jugar_a_las_cartas-as-espadas-1366x768.jpg);
+    overflow-x: hidden;
+}
+
+#luz{
+    height: 15px;
+    width: 15px;
+    background-color: rgb(230, 226, 226);
+    border-radius: 20px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
+    box-shadow: 0px 0px 45px 30px rgba(0, 97, 97, 0.986), 0px 0px 5px 1px rgba(21, 141, 21, 0.986), 0px 0px 9px 5px rgba(110, 153, 31, 0.986) ;
+}
+
+body:hover > #luz {
+    opacity: 1;
+}
+
+#Presentation{
+    position: static;
 }
 
 .TitleImg{
   position: absolute;
-  width: 1080px;
-  height: 665px; 
+  width: 1366px;
+  height: 870px; 
   z-index: 0;
 }
 
-.container1{
-    color: white;
-    display: grid;
-    grid-template-columns: 100px 100px 100px 100px 100px 100px;
-}
 
-
-.MDLTG{
+#MDLTG{
     position: absolute;
     color: white;
     left: 300px;
-    top: 320px;
-    font-size: 5rem;
-    text-shadow: 0 0 20px white;
+    top: 220px;
+    font-size: 7rem;
+    text-shadow: 0 0 10px white;
     font-family: fantasy;
-    grid-column-start: 1;
-    grid-column-end: 6;
+    z-index: 1;
 }
 
-.ghost{
-    left: 880px;
-    top: 240px;
+#card{
     position: absolute;
-    font-size: 200px;
+    top: 122px;
+    left: 894px;
+    width: 260px;
+    height: 400px;
+    background-color: black;
+    box-shadow: 0 0 20px rgb(14, 109, 93),
+                0 0 40px rgb(26, 160, 109),
+                0 0 80px rgb(22, 168, 66),
+                0 0 160px green;
+    animation: animate 3s linear infinite;
+    transform: rotate(30deg);
+}
+
+.poker1{
+    transform: rotate(30deg);
+    position: absolute;
+    left: 990px;
+    top: 125px;
+    font-size: 80px;
     color: white;
     text-shadow: 0 0 80px rgb(14, 109, 93),
                 0 0 160px rgb(26, 160, 109),
                 0 0 240px rgb(22, 168, 66),
                 0 0 320px green;
+    animation: animate 3s linear infinite;
+}
+.poker2{
+    transform: rotate(30deg);
+    position: absolute;
+    left: 1120px;
+    top: 203px;
+    font-size: 80px;
+    color: white;
+    text-shadow: 0 0 80px rgb(14, 109, 93),
+                0 0 160px rgb(26, 160, 109),
+                0 0 240px rgb(22, 168, 66),
+                0 0 320px green;
+    animation: animate 3s linear infinite;
+}.poker3{
+    transform: rotate(30deg);
+    position: absolute;
+    left: 850px;
+    top: 370px;
+    font-size: 80px;
+    color: white;
+    text-shadow: 0 0 80px rgb(14, 109, 93),
+                0 0 160px rgb(26, 160, 109),
+                0 0 240px rgb(22, 168, 66),
+                0 0 320px green;
+    animation: animate 3s linear infinite;
+}.poker4{
+    transform: rotate(30deg);
+    position: absolute;
+    left: 975px;
+    top: 445px;
+    font-size: 80px;
+    color: white;
+    text-shadow: 0 0 80px rgb(14, 109, 93),
+                0 0 160px rgb(26, 160, 109),
+                0 0 240px rgb(22, 168, 66),
+                0 0 320px green;
+    animation: animate 3s linear infinite;
+}
+#card1{
+    position: absolute;
+    top: 122px;
+    left: 170px;
+    width: 260px;
+    height: 400px;
+    background-color: black;
+    box-shadow: 0 0 20px rgb(14, 109, 93),
+                0 0 40px rgb(26, 160, 109),
+                0 0 80px rgb(22, 168, 66),
+                0 0 160px green;
+    animation: animate 3s linear infinite;
+    transform: rotate(-30deg);
 }
 
-.text{
+.poker1_1{
+    transform: rotate(-30deg);
+    position: absolute;
+    left: 250px;
+    top: 125px;
+    font-size: 80px;
+    color: white;
+    text-shadow: 0 0 80px rgb(14, 109, 93),
+                0 0 160px rgb(26, 160, 109),
+                0 0 240px rgb(22, 168, 66),
+                0 0 320px green;
+    animation: animate 3s linear infinite;
+}
+.poker2_1{
+    transform: rotate(-30deg);
+    position: absolute;
+    left: 120px;
+    top: 203px;
+    font-size: 80px;
+    color: white;
+    text-shadow: 0 0 80px rgb(14, 109, 93),
+                0 0 160px rgb(26, 160, 109),
+                0 0 240px rgb(22, 168, 66),
+                0 0 320px green;
+    animation: animate 3s linear infinite;
+}.poker3_1{
+    transform: rotate(-30deg);
+    position: absolute;
+    left: 385px;
+    top: 370px;
+    font-size: 80px;
+    color: white;
+    text-shadow: 0 0 80px rgb(14, 109, 93),
+                0 0 160px rgb(26, 160, 109),
+                0 0 240px rgb(22, 168, 66),
+                0 0 320px green;
+    animation: animate 3s linear infinite;
+}.poker4_1{
+    transform: rotate(-30deg);
+    position: absolute;
+    left: 270px;
+    top: 445px;
+    font-size: 80px;
+    color: white;
+    text-shadow: 0 0 80px rgb(14, 109, 93),
+                0 0 160px rgb(26, 160, 109),
+                0 0 240px rgb(22, 168, 66),
+                0 0 320px green;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.arrow{
+    position: absolute;
+    left: 650px;
+    top: 590px;
+    font-size: 50px;
+    z-index: 1;
+    width: 50px;
+    height: 54px;
+    transition: 1s;
+    border-radius: 40%;
+}
+
+.arrow:hover{
+    position: absolute;
+    text-shadow: 0 0 3px white,
+                0 0 80px white;
+    font-size: 65px;
+    transition-delay: 0.2s;
+    transition: 1s;
+    top: 84%;
+    left: 642px;
+    width: 55px;
+    height: 90px;
+    border-radius: 40%;
+}
+
+
+.autoscroll{
+    color: white;
+    text-decoration: underline;
+}
+
+
+.container1{
+    display: grid;
+    position: absolute;
+    grid-template-columns: 230px 100px 400px 100px;
+    top: 90%;
+    color: white;
+    font-size: x-large;
+    left: 120px;
+}
+
+#acerca{
+    font-family: fantasy;
+}
+
+
+#edu{
     position: relative;
+    right: -75px;
+    font-family: fantasy;
+}
+
+#project{
+    position: relative;
+    right: -320px;
+    font-family: fantasy;
+}
+
+#contacto{
+    position: relative;
+    right: -300px;
+    font-family: fantasy;
+}
+
+#txtv{
+    position: absolute;
     z-index: 1;
     color: white;
     font-size: 8rem;
-    top: 500px;
+    top: 3200px;
     width: 700px;
-    left: -300px;
+    left: -220px;
+}
+
+.container2{
+    position: absolute;
+    color: white;
+    font-size: large;
+    top: 125%;
+    max-height: 50%;
+    left: 40%;
+}
+
+.text{
+    width: 700px;
+    align-items: center;
+}
+
+#text_proj{
+    position: absolute;
+    width: 1200px;
+    left: -100px;
+    top: -40px;
+}
+
+#about{
+    position: absolute;
+}
+#educa{
+    position: absolute;
+    padding-bottom: 100px;
+    top: 760px;
+}
+#projects{
+    position: absolute;
+    padding-bottom: 100px;
+    top: 1580px;
+}
+#contact{
+    position: absolute;
+    padding-bottom: 20px;
+    top: 2300px;
+}
+
+#pacerca{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5%;
+    color: black;
+    left: -190px;
+    text-align: justify;
+    padding: 50px 40px 0 40px;
+    font-family: fantasy;
+    font-size: 1.6rem;
+}
+#lst_edu{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5%;
+    left: -200px;
+    text-align: start;
+    padding: 50px 40px 0 40px;
+    font-family: fantasy;
+    font-size: 1.6rem;
+}
+ul{
+    position: absolute;
+    font-family: fantasy;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    left: -130px;
+    top: 150px;
+}
+
+#ilus{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    padding-left: 105px;
+    top: -80px;
+    z-index: 1;
+}
+
+#upa{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    padding-left: 72px;
+    top: 120px;
+    z-index: 1;
+}
+
+#espol{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    padding-left: 30px;
+    top: 320px;
+    z-index: 1;
+}
+
+#pproyectos{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5%;
+    color: black;
+    left: -190px;
+    text-align: justify;
+    padding: 50px 40px 0 40px;
+    font-family: fantasy;
+    font-size: 1.6rem;
+}#pcontacto{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5%;
+    color: black;
+    left: -190px;
+    text-align: justify;
+    padding: 50px 40px 0 40px;
+    font-family: fantasy;
+    font-size: 1.6rem;
 }
