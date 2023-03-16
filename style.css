@@ -12,9 +12,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     background-image: url(https://img3.wallspic.com/crops/1/3/3/1/7/171331/171331-poquer_oscuro-poker-para_jugar_a_las_cartas-as-espadas-1366x768.jpg);
     overflow-x: hidden;
+    background-size: contain;
 }
 
 #luz{
@@ -36,27 +36,27 @@ body:hover > #luz {
     opacity: 1;
 }
 
-#Presentation{
-    position: static;
-}
-
-.TitleImg{
+#TitleImg{
   position: absolute;
-  width: 1366px;
-  height: 870px; 
+  width: 100%;
+  height: 100%; 
   z-index: 0;
 }
 
-
 #MDLTG{
-    position: absolute;
+    position: relative;
     color: white;
-    left: 300px;
-    top: 220px;
+    left: 22%;
     font-size: 7rem;
     text-shadow: 0 0 10px white;
     font-family: fantasy;
     z-index: 1;
+}
+
+#cards{
+    position: relative;
+    left: 2%;
+    top: -400px;
 }
 
 #card{
@@ -64,7 +64,7 @@ body:hover > #luz {
     top: 122px;
     left: 894px;
     width: 260px;
-    height: 400px;
+    height: 400px;    
     background-color: black;
     box-shadow: 0 0 20px rgb(14, 109, 93),
                 0 0 40px rgb(26, 160, 109),
@@ -198,31 +198,9 @@ body:hover > #luz {
     }
 }
 
-.arrow{
-    position: absolute;
-    left: 650px;
-    top: 590px;
-    font-size: 50px;
-    z-index: 1;
-    width: 50px;
-    height: 54px;
-    transition: 1s;
-    border-radius: 40%;
-}
 
-.arrow:hover{
-    position: absolute;
-    text-shadow: 0 0 3px white,
-                0 0 80px white;
-    font-size: 65px;
-    transition-delay: 0.2s;
-    transition: 1s;
-    top: 84%;
-    left: 642px;
-    width: 55px;
-    height: 90px;
-    border-radius: 40%;
-}
+
+
 
 
 .autoscroll{
@@ -230,48 +208,16 @@ body:hover > #luz {
     text-decoration: underline;
 }
 
-
-.container1{
+.sections{
     display: grid;
-    position: absolute;
-    grid-template-columns: 230px 100px 400px 100px;
-    top: 90%;
+    position: relative;
+    grid-template-columns: 290px 290px 200px 290px 290px;
+    top: 240px;
     color: white;
     font-size: x-large;
-    left: 120px;
-}
-
-#acerca{
-    font-family: fantasy;
-}
-
-
-#edu{
-    position: relative;
-    right: -75px;
-    font-family: fantasy;
-}
-
-#project{
-    position: relative;
-    right: -320px;
-    font-family: fantasy;
-}
-
-#contacto{
-    position: relative;
-    right: -300px;
-    font-family: fantasy;
-}
-
-#txtv{
-    position: absolute;
+    left: 0%;
+    text-align: center;
     z-index: 1;
-    color: white;
-    font-size: 8rem;
-    top: 3200px;
-    width: 700px;
-    left: -220px;
 }
 
 .container2{
@@ -283,35 +229,121 @@ body:hover > #luz {
     left: 40%;
 }
 
-.text{
-    width: 700px;
-    align-items: center;
+#acerca{
+    font-family: fantasy;
 }
 
-#text_proj{
+
+#edu{
+    font-family: fantasy;
+}
+
+.arrow{
     position: absolute;
-    width: 1200px;
-    left: -100px;
-    top: -40px;
+    font-size: 50px;
+    z-index: 1;
+    width: 50px;
+    height: 54px;
+    transition: 1s;
+    border-radius: 40%;
+    top: -40%;
+    left: 630px;
+}
+
+.arrow:hover{
+    position: absolute;
+    text-shadow: 0 0 3px white,
+                0 0 80px white;
+    font-size: 65px;
+    transition-delay: 0.2s;
+    transition: 1s;
+    top: -130%;
+    width: 55px;
+    height: 90px;
+    left: 624px;
+    border-radius: 40%;
+}
+
+#project{
+    font-family: fantasy;
+}
+
+#contacto{
+    font-family: fantasy;
+}
+
+#txtv{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 8rem;
+    top: 3800px;
+    width: 700px;
+    left: -220px;
+}
+
+.text{
+    position: relative;
+    width: 490px;
+    text-align: center;
+    left: -20%;
+    background: rgba(49, 47, 47, 0.8);
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px gray;
+}
+
+#iconosdiv{
+    position: absolute;
+    top: 440px;
+    left: 140px;
+    height: 80px;
+    width: 255px;
+}
+
+.textcontact{
+    position: absolute;
+    width: 490px;
+    left: 45px;
+    top: 360px;
+    text-align: center;
+    background: rgba(49, 47, 47, 0.8);
+    border-radius: 20px 20px 20px 20px;
+    text-shadow: 0 0 10px gray;
+}
+
+textarea{
+    min-width: 392px;
+    max-width: 392px;
+    width: 392px;
+    height: 150px;
+    max-height: 150px;
+    min-height: 76px;
+}
+
+.icon{
+    width: 80px;
+    height: 80px;
 }
 
 #about{
-    position: absolute;
+    position: relative;
+    top: -100px;
 }
 #educa{
-    position: absolute;
+    position: relative;
     padding-bottom: 100px;
     top: 760px;
 }
 #projects{
-    position: absolute;
+    position: relative;
     padding-bottom: 100px;
     top: 1580px;
 }
 #contact{
-    position: absolute;
+    position: relative;
     padding-bottom: 20px;
-    top: 2300px;
+    top: 2400px;
 }
 
 #pacerca{
@@ -348,7 +380,7 @@ ul{
     top: 150px;
 }
 
-#ilus{
+#upa{
     position: absolute;
     width: 180px;
     height: 180px;
@@ -357,7 +389,7 @@ ul{
     z-index: 1;
 }
 
-#upa{
+#espol{
     position: absolute;
     width: 180px;
     height: 180px;
@@ -366,7 +398,7 @@ ul{
     z-index: 1;
 }
 
-#espol{
+#ilus{
     position: absolute;
     width: 180px;
     height: 180px;
@@ -390,13 +422,108 @@ ul{
 }#pcontacto{
     position: absolute;
     width: 600px;
-    height: 600px;
+    height: 700px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 5%;
     color: black;
     left: -190px;
     text-align: justify;
-    padding: 50px 40px 0 40px;
+    padding: 20px 40px 0 40px;
     font-family: fantasy;
     font-size: 1.6rem;
+}
+
+form{
+    position: absolute;
+    top: 220px;
+    left: -140px;
+    font-size: 30px;
+}
+input{
+    font-size: 2rem;
+}
+textarea{
+    font-size: 2rem;
+}
+button{
+    position: relative;
+    top: -150px;
+    left: 90%;
+    font-size: 2rem;
+}
+
+#Enviar{
+    position: absolute;
+    top: 80px;
+    left: 458px;
+    box-shadow: 0 0 10px rgb(2, 41, 2),
+                0 0 20px rgb(2, 218, 2),
+                0 0 30px rgb(2, 218, 2);
+    background: rgb(26, 167, 13);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px rgb(4, 73, 4),
+                0 0 4px rgb(4, 73, 4);
+    border-radius: 6px;
+    border-color: rgb(2, 182, 2);
+}
+
+#Enviar:hover{
+    position: absolute;
+    transition: 2s;
+    font-size: 40px;
+    left: 112.9%;
+}
+
+#Enviar:hover:active{
+    background: rgb(12, 100, 4);
+    color: rgb(187, 214, 186);
+    border-radius: 6px;
+    border-color: rgb(2, 182, 2);
+    transition: 0.5s;
+    transform: rotate(360deg);
+    background-image: url(https://img1.wallspic.com/crops/8/9/1/6/5/156198/156198-codigo_binario-nmero_binario-data-verde-patron-7680x4320.jpg);
+    background-size:cover;
+}
+
+#Cancelar{
+    position: absolute;
+    top: 150px;
+    left: 439px;
+    box-shadow: 0 0 10px rgb(99, 5, 5),
+                0 0 20px rgb(209, 57, 57),
+                0 0 30px rgb(209, 57, 57);
+    background: rgb(189, 5, 5);
+    color: rgb(233, 215, 215);
+    text-shadow: 0 0 1px white;
+    border-radius: 6px;
+    border-color: rgb(168, 3, 3);
+}
+
+#Cancelar:hover{
+    position: absolute;
+    transition: 2s;
+    font-size: 40px;
+    left: 108%;
+}
+
+#Cancelar:hover:active{
+    background: rgb(105, 11, 11);
+    background-image: url(https://img1.wallspic.com/crops/8/9/1/6/5/156198/156198-codigo_binario-nmero_binario-data-verde-patron-7680x4320.jpg);
+    background-size:cover;
+    color: rgb(187, 214, 186);
+    border-radius: 6px;
+    border-color: rgb(2, 182, 2);
+    transition: 0.5s;
+    transform: rotate(360deg);
+}
+
+label{
+    font-size: 2rem;
+    color: rgba(255, 255, 255);
+    text-shadow: 0 0 19px black,
+                0 0 10px black,
+                0 0 20px black;
+    text-transform: uppercase;
+    font-weight: 650;
+    left: 100px;
 }

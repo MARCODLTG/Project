@@ -12,23 +12,25 @@
     <title>MDLTG Project</title>
 </head>
 <body>
-    <img class="TitleImg" src="https://img2.wallspic.com/crops/1/5/1/1/5/151151/151151-ilustracion_de_marco_blanco_y_negro-1366x768.jpg" alt="">
-    <div id="Presentation">
+    <img id="TitleImg" src="https://img2.wallspic.com/crops/1/5/1/1/5/151151/151151-ilustracion_de_marco_blanco_y_negro-1366x768.jpg" alt="">
+    <div id="container">
         <p id="MDLTG">M A R C O D L T G</p>
-        <div id="card"></div>
-        <i class="bi bi-suit-club-fill poker1"></i>
-        <i class="bi bi-suit-diamond-fill poker2"></i>
-        <i class="bi bi-suit-heart-fill poker3"></i>
-        <i class="bi bi-suit-spade-fill poker4"></i>
-        <div id="card1"></div>
-        <i class="bi bi-suit-club-fill poker1_1"></i>
-        <i class="bi bi-suit-diamond-fill poker2_1"></i>
-        <i class="bi bi-suit-heart-fill poker3_1"></i>
-        <i class="bi bi-suit-spade-fill poker4_1"></i>
-        <a class="autoscroll" href="#txtv"><i class="fa-solid fa-circle-chevron-down arrow"></i></a>
-        <div class="container1">
+        <div id="cards">
+            <div id="card"></div>
+            <i class="bi bi-suit-club-fill poker1"></i>
+            <i class="bi bi-suit-diamond-fill poker2"></i>
+            <i class="bi bi-suit-heart-fill poker3"></i>
+            <i class="bi bi-suit-spade-fill poker4"></i>
+            <div id="card1"></div>
+            <i class="bi bi-suit-club-fill poker1_1"></i>
+            <i class="bi bi-suit-diamond-fill poker2_1"></i>
+            <i class="bi bi-suit-heart-fill poker3_1"></i>
+            <i class="bi bi-suit-spade-fill poker4_1"></i>
+        </div>
+        <div class="sections">
             <a class="autoscroll" href="#about"><p id="acerca">ACERCA DE MÍ</p></a>
             <a class="autoscroll" href="#educa"><p id="edu">EDUCACIÓN</p></a>
+            <a class="autoscroll" href="#txtv"><i class="fa-solid fa-circle-chevron-down arrow"></i></a>
             <a class="autoscroll" href="#projects"><p id="project">PROYECTOS REALIZADOS</p></a>
             <a class="autoscroll" href="#contact"><p id="contacto">CONTACTO</p></a>
         </div>
@@ -43,30 +45,67 @@
             <p id="lst_edu">
                 <ul>
                     <li>
-                        Ilustrador Gráfico Jr.
-                        <img id="ilus" src="https://scontent.fgye7-1.fna.fbcdn.net/v/t39.30808-6/327126735_918675779568622_113600605875183544_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=cjDzI3tiNjoAX9vEFin&_nc_oc=AQlr0tBtLibKdV-gq7bP7ROxzfT8A0V4KoR4gDXWfWP967kMPFlqy66O4Uoy3_as6MI&_nc_ht=scontent.fgye7-1.fna&oh=00_AfCVVjkJ1B2NvLPOMFhIZfe8Tlm1r4fLgfbC3Vc_sAFn_A&oe=64148A2B" alt="">
-                    </li><br><br><br><br>
-                    <li>
                         Ingeniero en Sistemas
                         <img id="upa" src="https://media.licdn.com/dms/image/C4D0BAQHKKB0NVmQGww/company-logo_200_200/0/1519873895904?e=2147483647&v=beta&t=baYCrNmorTiIvXbx5VcATIIUNKl4y37LSv3GI69RxWQ" alt="">
                     </li><br><br><br><br>
                     <li>
                         Ingeniero en Mecatrónica
                         <img id="espol" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/ESPOL_-_Logo_001.svg/1024px-ESPOL_-_Logo_001.svg.png" alt="">
+                    </li><br><br><br><br>
+                    <li>
+                        Ilustrador Gráfico Jr.
+                        <img id="ilus" src="https://scontent.fgye7-1.fna.fbcdn.net/v/t39.30808-6/327126735_918675779568622_113600605875183544_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=cjDzI3tiNjoAX9vEFin&_nc_oc=AQlr0tBtLibKdV-gq7bP7ROxzfT8A0V4KoR4gDXWfWP967kMPFlqy66O4Uoy3_as6MI&_nc_ht=scontent.fgye7-1.fna&oh=00_AfCVVjkJ1B2NvLPOMFhIZfe8Tlm1r4fLgfbC3Vc_sAFn_A&oe=64148A2B" alt="">
                     </li>
                 </ul>
             </p>
         </div>
         <div id="projects">
-            <h1 id="text_proj">PROYECTOS REALIZADOS</h1>
+            <h1 class="text">PROYECTOS REALIZADOS</h1>
             <p id="pproyectos"></p>
         </div>
         <div id="contact">
             <h1 class="text">CONTACTO</h1>
-            <p id="pcontacto"></p>
+            <p id="pcontacto">Si tienes alguna duda o tienes una propuesta de colaboración en algún proyecto puedes crear un ticket con tu información para comunicarte conmigo. Responderé tu mensaje lo antes!
+            <form>
+                <div class="field">
+                    <label><b>Nombre:</b></label>
+                    <div class="control">
+                        <input type="text" placeholder="Ingrese su nombre" id="nombre">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label><b>Correo:</b></label>
+                    <div class="control">
+                        <input type="text" placeholder="Ingrese su correo" id="correo">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label><b>Mensaje:</b></label>
+                    <div class="control">
+                        <textarea type="text" placeholder="Ingrese mensaje" id="mensaje"></textarea>
+                    </div>  
+                </div>
+                <div>
+                    <div class="control">
+                        <button type="button" class="button is-link" id="Enviar">Enviar</button>
+                    </div>
+                    <div class="control">
+                        <button type="button" id="Cancelar">Cancelar</button>
+                    </div>
+                </div>
+                <p class="textcontact">O puedes contactarme directamente por mis redes sociales:</p>
+                <div id="iconosdiv">
+                    <a href="index5.html"><img class="icon" src="https://cdn-icons-png.flaticon.com/128/2504/2504903.png" alt=""></a>
+                    <img class="icon" src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="">
+                    <img class="icon" src="https://cdn-icons-png.flaticon.com/128/2504/2504947.png" alt="">
+                </div>
+            </form>
+            </p>
         </div>
         <div>
-            <p id="txtv">Versión 0.0.4</p>
+            <p id="txtv">Versión 0.0.5</p>
         </div>
     </div>
 </body>
