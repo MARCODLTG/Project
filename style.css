@@ -272,16 +272,6 @@ body:hover > #luz {
     font-family: fantasy;
 }
 
-#txtv{
-    position: absolute;
-    z-index: 1;
-    color: white;
-    font-size: 8rem;
-    top: 3800px;
-    width: 700px;
-    left: -220px;
-}
-
 .text{
     position: relative;
     width: 490px;
@@ -452,9 +442,9 @@ button{
     font-size: 2rem;
 }
 
-#Enviar{
+#Enviarbt{
     position: absolute;
-    top: 80px;
+    top: 140px;
     left: 458px;
     box-shadow: 0 0 10px rgb(2, 41, 2),
                 0 0 20px rgb(2, 218, 2),
@@ -467,14 +457,14 @@ button{
     border-color: rgb(2, 182, 2);
 }
 
-#Enviar:hover{
+#Enviarbt:hover{
     position: absolute;
     transition: 2s;
     font-size: 40px;
-    left: 112.9%;
+    left: 288%;
 }
 
-#Enviar:hover:active{
+#Enviarbt:hover:active{
     background: rgb(12, 100, 4);
     color: rgb(187, 214, 186);
     border-radius: 6px;
@@ -485,9 +475,9 @@ button{
     background-size:cover;
 }
 
-#Cancelar{
+#Cancelarbt{
     position: absolute;
-    top: 150px;
+    top: 210px;
     left: 439px;
     box-shadow: 0 0 10px rgb(99, 5, 5),
                 0 0 20px rgb(209, 57, 57),
@@ -499,14 +489,14 @@ button{
     border-color: rgb(168, 3, 3);
 }
 
-#Cancelar:hover{
+#Cancelarbt:hover{
     position: absolute;
     transition: 2s;
     font-size: 40px;
-    left: 108%;
+    left: 275%;
 }
 
-#Cancelar:hover:active{
+#Cancelarbt:hover:active{
     background: rgb(105, 11, 11);
     background-image: url(https://img1.wallspic.com/crops/8/9/1/6/5/156198/156198-codigo_binario-nmero_binario-data-verde-patron-7680x4320.jpg);
     background-size:cover;
@@ -526,4 +516,110 @@ label{
     text-transform: uppercase;
     font-weight: 650;
     left: 100px;
+}
+
+
+#nombre{
+    position: absolute;
+    width: 270px;
+}
+#apellido{
+    position: absolute;
+    width: 273px;
+    top: 37px;
+    left: 323px;
+}
+#apellidolbl{
+    position: absolute;
+    top: 0px;
+    left: 325px;
+}
+
+.lblscorreo{
+    top: 80px;
+    position: absolute;
+}
+.lblsmensaje{
+    top: 160px;
+    position: absolute;
+}
+
+#infform{
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    top: 110px;
+    background: rgba(255, 255, 255, 0.8);
+    left: -150px;
+    color: rgb(46, 43, 43);
+}
+
+#ojodiv,#bocadiv,#p1div,#p2div,#p3div{
+    position: absolute;
+}
+
+#ojo{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    top: 20px;
+    left: -70px;
+}
+#boca{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    top: 145px;
+    left: -70px;
+}
+#p1{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    top: 270px;
+    left: -70px;
+}
+#p2{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    top: 395px;
+    left: -70px;
+}
+#p3{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    top: 520px;
+    left: -70px;
+}
+
+#ojolst{
+    position: absolute;
+    top: 45px;
+    left: 110px;
+}
+#bocalst{
+    position: absolute;
+    top: 165px;
+    left: 110px;
+}
+#p1lst{
+    position: absolute;
+    top: 285px;
+    left: 110px;
+}
+#p2lst{
+    position: absolute;
+    top: 415px;
+    left: 110px;
+}
+#p3lst{
+    position: absolute;
+    top: 535px;
+    left: 110px;
+}
+
+li{
+    width: 600px;
 }
