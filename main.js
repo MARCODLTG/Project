@@ -79,10 +79,10 @@ function Cancelar(){
     document.getElementById('nombre').focus();
 }
 
-/*const Alerta = () => {
+const Alerta = () => {
     alert("Bienvenido usuario al sitio web!!");
 }
-setTimeout(Alerta, 0500);*/
+setTimeout(Alerta, 0500);
 
 function enviarFormulario() {
     const nombre = document.getElementById("nombre").value;
